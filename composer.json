@@ -1,0 +1,21 @@
+{
+    "name": "teamones/ucenter",
+    "description": "Teamones 用户中心组件",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Weijer Cheng",
+            "email": "weiwei163@foxmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "teamones/etcd-discovery": ">=0.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "teamones\\ucenter\\": "src/"
+        }
+    }
+}
