@@ -16,6 +16,9 @@
     "autoload": {
         "psr-4": {
             "teamones\\ucenter\\": "src/"
-        }
+        },
+        "files": [
+            "helper.php"
+        ]
     }
 }
