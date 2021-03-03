@@ -157,8 +157,8 @@ class Base
             // header 处理
             $presetHeaders = [];
 
-            if (!empty($this->auth->getRequest()->getXUserInfo())) {
-                $presetHeaders['X-Userinfo'] = $this->auth->getRequest()->getXUserInfo();
+            if (!empty($this->auth->getXUserInfo())) {
+                $presetHeaders['X-Userinfo'] = $this->auth->getXUserInfo();
             }
             $headers = array_merge($presetHeaders, $headers);
 

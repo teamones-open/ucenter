@@ -16,9 +16,7 @@ class CertificateProxy
     protected $ip;
     protected $debug = false;
     protected $serverName;
-
-    /** @var think\Request */
-    protected $request;
+    protected $xUserInfo = "";
 
     /**
      * @return mixed
@@ -85,22 +83,6 @@ class CertificateProxy
     }
 
     /**
-     * @return think\Request
-     */
-    public function getRequest()
-    {
-        return $this->request;
-    }
-
-    /**
-     * @param mixed $request
-     */
-    public function setRequest($request): void
-    {
-        $this->request = $request;
-    }
-
-    /**
      * @return mixed
      */
     public function getServerName()
@@ -114,6 +96,22 @@ class CertificateProxy
     public function setServerName($serverName): void
     {
         $this->serverName = $serverName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getXUserInfo(): string
+    {
+        return $this->xUserInfo;
+    }
+
+    /**
+     * @param string $xUserInfo
+     */
+    public function setXUserInfo(string $xUserInfo): void
+    {
+        $this->xUserInfo = $xUserInfo;
     }
 
 }

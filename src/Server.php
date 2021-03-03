@@ -74,12 +74,12 @@ class Server
     }
 
     /**
-     * 设置request
-     * @param $request
+     * 设置xuserinfo
+     * @param $xUserInfo
      */
-    public function setRequest($request)
+    public function setXUserInfo($xUserInfo)
     {
-        $this->auth->setRequest($request);
+        $this->auth->setXUserInfo($xUserInfo);
     }
 
     /**
